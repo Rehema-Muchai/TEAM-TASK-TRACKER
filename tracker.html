@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Team Task Tracker</title>
+        <link rel="stylesheet" href="tracker.css" />
+</head>
+
+<body>
+        <div class="container">
+                <h1>Team Task Tracker</h1>
+
+                <!-- Team Members -->
+                <section class="team-section">
+                        <h2>Team Members</h2>
+                        <div id="teamSection" class="team-list"></div>
+                </section>
+
+                <!-- Add Task Form -->
+                <section class="form-section">
+                        <h2>Add New Task</h2>
+                        <form id="taskForm">
+                                <input type="text" id="taskInput" placeholder="Task description" />
+                                <select id="assigneeSelect"></select>
+                                <button type="submit">Add Task</button>
+                        </form>
+                </section>
+
+                <!-- Filter -->
+                <section class="filter-section">
+                        <h2>Filter Tasks</h2>
+                        <select id="filterSelect">
+                                <option value="all">All Members</option>
+                        </select>
+                </section>
+
+                <!-- Task List -->
+                <section class="task-section">
+                        <h2>Task List</h2>
+                        <ul id="taskList" class="task-list"></ul>
+                </section>
+        </div>
+        <script src="tracker.js"></script>
+</body>
+
+</html>

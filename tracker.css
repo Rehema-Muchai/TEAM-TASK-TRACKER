@@ -1,0 +1,227 @@
+/* 🔄 Reset & Base Styles */
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f0f2f5;
+        padding: 20px;
+        color: #333;
+}
+
+.container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+        margin-bottom: 15px;
+        color: #2c3e50;
+}
+
+/* 👥 Team Members */
+.team-list {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+}
+
+.team-list div {
+        background: #eaf2ff;
+        padding: 10px 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+        font-weight: bold;
+}
+
+/* 📝 Form Elements */
+form {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+}
+
+input,
+select,
+button {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+}
+
+button {
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+}
+
+button:hover {
+        background-color: #219150;
+}
+
+/* ✅ Task List */
+.task-list {
+        list-style: none;
+        margin-top: 10px;
+}
+
+.task-list li {
+        background: #f9f9f9;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-left: 5px solid #27ae60;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background 0.3s ease;
+}
+
+.task-list li:hover {
+        background: #f1f1f1;
+}
+
+.task-list li span {
+        flex: 1;
+        margin-left: 10px;
+        font-size: 16px;
+        word-break: break-word;
+}
+
+.task-completed {
+        text-decoration: line-through;
+        color: #999;
+}
+
+/* 🟢 Priority Colors */
+.task-priority-high {
+        border-left-color: #e74c3c;
+}
+
+.task-priority-medium {
+        border-left-color: #f39c12;
+}
+
+.task-priority-low {
+        border-left-color: #27ae60;
+}
+
+/* 🧾 Task Info */
+.task-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+}
+
+.task-info small {
+        font-size: 13px;
+        margin-top: 2px;
+        color: #777;
+}
+
+.task-info small.priority-high {
+        color: #c0392b;
+        font-weight: bold;
+}
+
+.task-info small.priority-medium {
+        color: #d35400;
+        font-weight: bold;
+}
+
+.task-info small.priority-low {
+        color: #27ae60;
+        font-weight: bold;
+}
+
+.task-info small.assigned-to {
+        font-style: italic;
+        color: #555;
+}
+
+.task-info small.assigned-to::before {
+        content: "Assigned to: ";
+        font-weight: normal;
+        color: #555;
+}
+
+/* ✅ Completed Tasks */
+.task-list li.completed {
+        background: #d4edda;
+        border-left-color: #28a745;
+}
+
+.task-list li.completed span,
+.task-list li.completed .task-info small {
+        color: #155724;
+}
+
+/* 🎯 Buttons */
+.button-group {
+        display: flex;
+        gap: 10px;
+        margin-left: 15px;
+}
+
+.button-group button {
+        flex: 1;
+        padding: 8px 12px;
+        font-size: 14px;
+        border-radius: 4px;
+        color: white;
+        border: none;
+        cursor: pointer;
+}
+
+.complete-btn {
+        background-color: #2980b9;
+}
+
+.complete-btn:hover {
+        background-color: #2471a3;
+}
+
+.delete-btn {
+        background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+        background-color: #c0392b;
+}
+
+button:disabled,
+.task-list li.completed .complete-btn {
+        background-color: #6c757d;
+        cursor: not-allowed;
+}
+
+button:disabled:hover {
+        background-color: #6c757d;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+
+        form,
+        .team-list,
+        .task-list li {
+                flex-direction: column;
+                align-items: flex-start;
+        }
+
+        .task-list li button {
+                margin-top: 10px;
+        }
+}
