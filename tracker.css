@@ -1,4 +1,4 @@
-/* 🔄 Reset & Base Styles */
+/* Reset & Base Styles */
 * {
         box-sizing: border-box;
         margin: 0;
@@ -42,7 +42,7 @@ h2 {
         font-weight: bold;
 }
 
-/* 📝 Form Elements */
+/* Form Elements */
 form {
         display: flex;
         gap: 10px;
@@ -71,7 +71,7 @@ button:hover {
         background-color: #219150;
 }
 
-/* ✅ Task List */
+/* Task List */
 .task-list {
         list-style: none;
         margin-top: 10px;
@@ -105,7 +105,7 @@ button:hover {
         color: #999;
 }
 
-/* 🟢 Priority Colors */
+/* Priority Colors */
 .task-priority-high {
         border-left-color: #e74c3c;
 }
@@ -118,7 +118,7 @@ button:hover {
         border-left-color: #27ae60;
 }
 
-/* 🧾 Task Info */
+/* Task Info */
 .task-info {
         display: flex;
         flex-direction: column;
@@ -157,7 +157,7 @@ button:hover {
         color: #555;
 }
 
-/* ✅ Completed Tasks */
+/* Completed Tasks */
 .task-list li.completed {
         background: #d4edda;
         border-left-color: #28a745;
@@ -168,7 +168,7 @@ button:hover {
         color: #155724;
 }
 
-/* 🎯 Buttons */
+/* Buttons */
 .button-group {
         display: flex;
         gap: 10px;
@@ -217,7 +217,7 @@ button:disabled:hover {
         color: var(--muted)
 }
 
-/* 📱 Responsive Design */
+/* Responsive Design */
 @media (max-width: 600px) {
 
         form,
