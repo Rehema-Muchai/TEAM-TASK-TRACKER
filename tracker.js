@@ -1,8 +1,8 @@
 // Sample data
 let teamMembers = [
-        { id: 1, name: "Alice Johnson", email: "alice@example.com", role: "Developer" },
-        { id: 2, name: "Bob Smith", email: "bob@example.com", role: "Designer" },
-        { id: 3, name: "Charlie Brown", email: "charlie@example.com", role: "Tester" }
+        { id: 1, name: "Emma Muchai", email: "ema@example.com", role: "Actress" },
+        { id: 2, name: "Nara Smith", email: "nara@example.com", role: "Screen Player" },
+        { id: 3, name: "Cole Brooks", email: "cole@example.com", role: "Director" }
 ];
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];

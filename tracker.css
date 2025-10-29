@@ -211,6 +211,12 @@ button:disabled:hover {
         background-color: #6c757d;
 }
 
+.footer {
+        padding: 12px;
+        text-align: center;
+        color: var(--muted)
+}
+
 /* 📱 Responsive Design */
 @media (max-width: 600px) {
 
